@@ -15,7 +15,8 @@
 <img width="1791" height="1058" alt="imagen" src="https://github.com/user-attachments/assets/046981c5-3578-4e31-bb6f-d742a0eb0f96" />
 
 
-
+*Para entrar en el phpmyadmin accedemos a localhost 8080 y nos mostraria algo como esto*
+<img width="1903" height="1058" alt="imagen" src="https://github.com/user-attachments/assets/f420b23a-c124-432e-9b93-8d016c5d1644" />
 
 
 
