@@ -7,12 +7,13 @@
 *Ahora realizamos la configuracion de prestashop para que guarde dependencias de db y compruebe su estado con healthcheck y datos protegidos en el archivo .env_*
 <img width="1174" height="468" alt="Captura desde 2025-10-15 08-47-58" src="https://github.com/user-attachments/assets/fd7f113d-0830-4d10-a460-e49455ac0012" />
 
-*Por ultimo realizamos la creacion de phpmyadmin donde recoge volumenes de db y prestashop y realiza el healthcheck de db_*
+*Por ultimo realizamos la creacion de phpmyadmin donde  realiza el healthcheck de db y crea su imagen _*
 <img width="1174" height="555" alt="Captura desde 2025-10-15 08-48-14" src="https://github.com/user-attachments/assets/771fe7bc-363b-4ead-b2b3-5b434914801c" />
 
 
 *Para realizar de forma segura su inicio necesitamos asegurar sus componentes para que el archivo .env oculto no revele datos importantes _*
 <img width="1791" height="1058" alt="imagen" src="https://github.com/user-attachments/assets/046981c5-3578-4e31-bb6f-d742a0eb0f96" />
+
 
 
 
