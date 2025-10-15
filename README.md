@@ -1,22 +1,23 @@
 ## Tarea06
 
-*En el archivo yml creamos la base de datos con imagen de mysql y realizamos el healthcheck y por ultimo asignamos su volumen_*
+*En el archivo yml creamos la base de datos con imagen de mysql y realizamos el healthcheck y por ultimo asignamos su volumen*
 
 <img width="1174" height="468" alt="Captura desde 2025-10-15 08-47-50" src="https://github.com/user-attachments/assets/65ab12c7-7b17-4241-82c4-a16a2b985945" />
 
-*Ahora realizamos la configuracion de prestashop para que guarde dependencias de db y compruebe su estado con healthcheck y datos protegidos en el archivo .env_*
+*Ahora realizamos la configuracion de prestashop para que guarde dependencias de db y compruebe su estado con healthcheck y datos protegidos en el archivo .env*
 <img width="1174" height="468" alt="Captura desde 2025-10-15 08-47-58" src="https://github.com/user-attachments/assets/fd7f113d-0830-4d10-a460-e49455ac0012" />
 
 *Por ultimo realizamos la creacion de phpmyadmin donde  realiza el healthcheck de db empleando la imagen de phpmyadmin_*
 <img width="1174" height="555" alt="Captura desde 2025-10-15 08-48-14" src="https://github.com/user-attachments/assets/771fe7bc-363b-4ead-b2b3-5b434914801c" />
 
 
-*Para realizar de forma segura su inicio necesitamos asegurar sus componentes para que el archivo .env oculto no revele datos importantes _*
+*Para realizar de forma segura su inicio necesitamos asegurar sus componentes para que el archivo .env oculto no revele datos importantes *
 <img width="1791" height="1058" alt="imagen" src="https://github.com/user-attachments/assets/046981c5-3578-4e31-bb6f-d742a0eb0f96" />
 
 
 *Para entrar en el phpmyadmin accedemos a localhost 8080 y nos mostraria algo como esto*
 <img width="1903" height="1058" alt="imagen" src="https://github.com/user-attachments/assets/246dcefe-f5b0-427d-b9f3-f5705295cbf3" />
+
 
 
 
