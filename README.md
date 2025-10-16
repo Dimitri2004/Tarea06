@@ -20,6 +20,7 @@
 *Una vez nos registremos entraremos en esta ventana*
 <img width="1906" height="949" alt="imagen" src="https://github.com/user-attachments/assets/7a46e445-dae6-4d9c-8ef6-718853422d4b" />
 
-*Una vez realizada la instalacion y asignarle la creacion de las tablas en administer nos las instalaria ahí*
+*Una vez realizada la instalacion y asignarle la creacion de las tablas en la base de datos de administer nos las instalaria ahí*
 <img width="1906" height="949" alt="Captura desde 2025-10-16 09-20-34" src="https://github.com/user-attachments/assets/76ff0eed-cce8-4def-9e0b-ea5d950435d9" />
+
 
