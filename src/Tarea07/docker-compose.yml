@@ -1,0 +1,74 @@
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    healthcheck:
+      test: ["CMD","mysqladmin","ping","-h","localhost","-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  prestashop:
+    depends_on:
+      - redis
+      - db
+    container_name: prestashop_Container
+    image: prestashop/prestashop:8.0
+    restart: always
+    environment:
+      DB_NAME: ${MYSQL_DATABASE}
+      DB_USER: ${MYSQL_USER}
+      DB_PASSWORD: ${MYSQL_PASSWORD}
+      DB_SERVER: db
+      PS_INSTALL_AUTO: 1
+      PS_CACHE_ENABLED: 1
+      PS_CACHE_REDIS_SERVER: redis
+      PS_CACHE_REDIS_PORT: 6379
+    networks:
+      - prestashop-network
+    ports:
+      - 8085:80
+
+
+  redis:
+    image: redis:latest
+    container_name: redis_Container
+
+    environment:
+      PS_CACHE_REDIS_SERVER: redis
+      PS_CACHE_REDIS_PORT: 6379
+      PS_CACHE_ENABLED: 1
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data # Opcional: para persistencia de datos
+    networks:
+      - prestashop-network
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: ${PMA_HOST}
+      PMA_PORT: ${PMA_PORT}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  db_data:
+  redis_data:
+
+networks:
+  prestashop-network:
