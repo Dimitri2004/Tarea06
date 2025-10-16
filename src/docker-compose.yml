@@ -1,0 +1,50 @@
+services:
+
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    healthcheck:
+      test: ["CMD","mysqladmin","ping","-h","localhost","-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  prestashop:
+    depends_on:
+      db:
+        condition: service_healthy
+    image: prestashop/prestashop:8.0
+    restart: always
+    environment:
+      DB_HOST:  db
+      DB_NAME: ${MYSQL_DATABASE}
+      DB_USER: ${MYSQL_USER}
+      DB_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - 8080:80
+    volumes:
+      - prestashop_data:/var/www/html
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: ${PMA_HOST}
+      PMA_PORT: ${PMA_PORT}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  db_data:
+  prestashop_data:
