@@ -11,7 +11,7 @@
 <img width="1174" height="555" alt="Captura desde 2025-10-15 08-48-14" src="https://github.com/user-attachments/assets/771fe7bc-363b-4ead-b2b3-5b434914801c" />
 
 
-*Para realizar de forma segura su inicio necesitamos asegurar sus componentes para que el archivo .env oculto no revele datos importantes*
+*Para realizar de forma segura su inicio necesitamos asegurar sus componentes en el archivo .env oculto que se encarga de guardar los datos privados*
 <img width="1906" height="949" alt="imagen" src="https://github.com/user-attachments/assets/72512be3-2169-45d7-8a7f-c7862e242f0f" />
 
 *Para entrar en el phpmyadmin accedemos a localhost 8080 y nos mostraria algo como esto*
@@ -22,6 +22,7 @@
 
 *Una vez realizada la instalacion y asignarle la creacion de las tablas en la base de datos de administer nos las instalaria ahí*
 <img width="1907" height="1056" alt="imagen" src="https://github.com/user-attachments/assets/719ac896-ad54-42e4-93bf-f4229e3d39f9" />
+
 
 
 
