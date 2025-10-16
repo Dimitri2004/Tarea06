@@ -11,15 +11,15 @@
 <img width="1174" height="555" alt="Captura desde 2025-10-15 08-48-14" src="https://github.com/user-attachments/assets/771fe7bc-363b-4ead-b2b3-5b434914801c" />
 
 
-*Para realizar de forma segura su inicio necesitamos asegurar sus componentes para que el archivo .env oculto no revele datos importantes *
-<img width="1791" height="1058" alt="imagen" src="https://github.com/user-attachments/assets/046981c5-3578-4e31-bb6f-d742a0eb0f96" />
-
+*Para realizar de forma segura su inicio necesitamos asegurar sus componentes para que el archivo .env oculto no revele datos importantes*
+<img width="1906" height="949" alt="imagen" src="https://github.com/user-attachments/assets/72512be3-2169-45d7-8a7f-c7862e242f0f" />
 
 *Para entrar en el phpmyadmin accedemos a localhost 8080 y nos mostraria algo como esto*
 <img width="1903" height="1058" alt="imagen" src="https://github.com/user-attachments/assets/246dcefe-f5b0-427d-b9f3-f5705295cbf3" />
 
-una vez nos registremos entraremos en esta ventana
+*Una vez nos registremos entraremos en esta ventana*
 <img width="1906" height="949" alt="imagen" src="https://github.com/user-attachments/assets/7a46e445-dae6-4d9c-8ef6-718853422d4b" />
 
-Unavez realizada la instalacion y asignarle la creacion de las tablas en administer nos las instalaria ahí
+*Una vez realizada la instalacion y asignarle la creacion de las tablas en administer nos las instalaria ahí*
 <img width="1906" height="949" alt="Captura desde 2025-10-16 09-20-34" src="https://github.com/user-attachments/assets/76ff0eed-cce8-4def-9e0b-ea5d950435d9" />
+
