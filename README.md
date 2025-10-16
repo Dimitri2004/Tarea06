@@ -18,6 +18,11 @@
 *Para entrar en el phpmyadmin accedemos a localhost 8080 y nos mostraria algo como esto*
 <img width="1903" height="1058" alt="imagen" src="https://github.com/user-attachments/assets/246dcefe-f5b0-427d-b9f3-f5705295cbf3" />
 
+una vez nos registremos entraremos en esta ventana
+<img width="1906" height="949" alt="imagen" src="https://github.com/user-attachments/assets/7a46e445-dae6-4d9c-8ef6-718853422d4b" />
+
+
+
 
 
 
